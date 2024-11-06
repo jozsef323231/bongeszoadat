@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Böngésző Elemző</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Böngésző Elemző</h1>
+            <p>Fedezze fel böngészője képességeit és tulajdonságait</p>
+        </header>
+
+        <div class="card browser-info" id="mainInfo">
+        </div>
+
+        <div class="card">
+            <h2>Böngésző Kompatibilitás</h2>
+            <div id="compatibility"></div>
+        </div>
+
+        <div class="card">
+            <h2>Teljesítmény Teszt</h2>
+            <div id="performance"></div>
+            <button class="button" onclick="runPerformanceTest()">Teszt Futtatása</button>
+        </div>
+
+        <div class="card">
+            <h2>Használati Statisztika</h2>
+            <canvas id="statsChart"></canvas>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
